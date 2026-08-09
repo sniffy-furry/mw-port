@@ -1,0 +1,10 @@
+build/
+android/.gradle/
+android/app/build/
+android/app/.cxx/
+android/local.properties
+data/*.BUN
+data/*.bun
+*.o
+*.obj
+.DS_Store
