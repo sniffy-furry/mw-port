@@ -4,6 +4,7 @@
 #include "formats/solidlist.h"
 #include <vector>
 #include <array>
+#include <cmath>
 
 namespace nfsmw {
 

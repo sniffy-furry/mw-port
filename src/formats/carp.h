@@ -1,6 +1,9 @@
 #pragma once
 #include "chunk.h"
 #include <vector>
+#include <string>
+#include <cstdint>
+#include <utility>
 #include <unordered_map>
 #include <unordered_set>
 #include <stdexcept>

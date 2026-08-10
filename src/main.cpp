@@ -21,6 +21,7 @@
 #include <fstream>
 #include <cmath>
 #include <cstdio>
+#include <utility>
 
 using namespace nfsmw;
 
