@@ -18,6 +18,11 @@ include(FetchContent)
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(BUILD_GAMES OFF CACHE BOOL "" FORCE)
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
+# raylib does NOT auto-detect Android just from the NDK toolchain file --
+# it needs this told explicitly, or it defaults to "Desktop" and tries to
+# build GLFW (which then fails looking for X11). This was the actual
+# failure in the first CI run.
+set(PLATFORM "Android" CACHE STRING "" FORCE)
 
 FetchContent_Declare(
     raylib
